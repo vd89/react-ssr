@@ -36,7 +36,8 @@
     "webpack-node-externals": "^2.5.2"
   },
   "scripts": {
-    "dev": "webpack --config webpack.server.js"
+    "dev:server":"nodemon --watch build --exec \"node build/bundle.js\"",
+    "dev:build:server": "webpack --config webpack.server.js --watch"
   },
   "devDependencies": {
     "webpack-cli": "^4.4.0"
